@@ -1,0 +1,77 @@
+/* Set up the overall page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1a1a1a; /* Dark background for a sleek look */
+    color: #e6e6e6; /* Light text for readability */
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #ff2d55; /* Vibrant pink for the navbar */
+    padding: 10px 0;
+    position: sticky; /* Keep it fixed at the top when scrolling */
+    top: 0;
+}
+
+/* Configure the navbar list */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center the menu items */
+}
+
+/* Style individual navbar items */
+.navbar li {
+    display: inline;
+    margin: 0 20px; /* Space out the links */
+}
+
+/* Style the navbar links */
+.navbar a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Change link color on hover */
+.navbar a:hover {
+    color: #00d4ff; /* Bright cyan for hover effect */
+}
+
+/* Style the main content area */
+.content {
+    max-width: 800px;
+    margin: 20px auto; /* Center the content with some margin */
+    padding: 20px;
+}
+
+/* Style the main heading */
+h1 {
+    color: #ff2d55; /* Match the navbar color */
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase; /* Bold and prominent */
+}
+
+/* Style subheadings */
+h2 {
+    color: #00d4ff; /* Cyan for contrast */
+    font-size: 1.8em;
+    border-bottom: 2px solid #ff2d55; /* Pink underline for emphasis */
+    padding-bottom: 5px;
+    margin-top: 40px; /* Space above subheadings */
+}
+
+/* Style paragraphs and lists */
+p, ul {
+    font-size: 1.1em;
+    line-height: 1.6; /* Comfortable reading line height */
+}
+
+/* Style unordered lists */
+ul {
+    list-style-type: square; /* Square bullets
