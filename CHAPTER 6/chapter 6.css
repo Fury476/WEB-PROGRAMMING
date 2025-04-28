@@ -1,0 +1,162 @@
+/* Reset default styles for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the page with a clean and centered layout */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif; /* Modern font stack */
+    background: linear-gradient(135deg, #e0e7ff, #f0f2f5); /* Subtle gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Prevent scrollbars during animations */
+}
+
+/* Create a sleek container for the calculator with glow effect */
+.calculator-container {
+    background: rgba(255, 255, 255, 0.95); /* Slightly transparent for depth */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), /* Stronger shadow */
+                0 0 20px rgba(0, 123, 255, 0.3); /* Subtle blue glow */
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: glowPulse 2s ease-in-out infinite; /* Glowing animation */
+}
+
+/* Glow animation keyframes */
+@keyframes glowPulse {
+    0%, 100% {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), 
+                    0 0 20px rgba(0, 123, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), 
+                    0 0 30px rgba(0, 123, 255, 0.5);
+    }
+}
+
+/* Scale calculator slightly on hover for interactivity */
+.calculator-container:hover {
+    transform: scale(1.02); /* Subtle zoom effect */
+}
+
+/* Center and style the main heading with a glowing text effect */
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.4); /* Glowing text */
+    transition: text-shadow 0.3s ease;
+}
+
+/* Glow intensifies on hover */
+h1:hover {
+    text-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+}
+
+/* Group input fields for better organization */
+.input-group {
+    margin-bottom: 1.2rem;
+    position: relative; /* For potential interactive elements */
+}
+
+/* Style labels for input fields with smooth animation */
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Move label slightly up on input focus for interactivity */
+.input-group input:focus + label {
+    color: #007bff;
+    transform: translateY(-2px);
+}
+
+/* Style input fields with glow and scale effects */
+.input-group input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f9f9f9; /* Light background for inputs */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+/* Glow and scale input on focus */
+.input-group input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.5); /* Glowing effect */
+    transform: scale(1.01); /* Subtle scale for feedback */
+}
+
+/* Style the button with a vibrant, glowing, and interactive feel */
+button {
+    width: 100%;
+    padding: 0.85rem;
+    background: linear-gradient(45deg, #007bff, #00c4ff); /* Gradient for modern look */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4); /* Default button glow */
+}
+
+/* Button hover: Glow intensifies, slight lift */
+button:hover {
+    background: linear-gradient(45deg, #0056b3, #0099cc);
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6); /* Stronger glow */
+}
+
+/* Button active: Pressed-down effect */
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(0, 123, 255, 0.3);
+}
+
+/* Style the result display with a glowing animation */
+#result {
+    margin-top: 1.2rem;
+    text-align: center;
+    color: #222;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: rgba(0, 123, 255, 0.05); /* Subtle background */
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+    animation: resultFadeIn 0.5s ease; /* Fade-in animation for result */
+}
+
+/* Glow effect when result updates */
+#result:not(:empty) {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
+}
+
+/* Fade-in animation for result */
+@keyframes resultFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
