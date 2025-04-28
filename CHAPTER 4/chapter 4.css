@@ -1,0 +1,143 @@
+/* Set up the overall page look and feel */
+body {
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+
+/* Style the header for a bold introduction */
+header {
+    background-color: #17072b;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Make the main header title pop */
+header h1 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Create a sleek navigation bar */
+nav {
+    background-color: #172d67;
+    padding: 10px;
+}
+
+/* Style the navigation list for clean alignment */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Arrange navigation items side by side */
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+/* Style the navigation links */
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Add an underline effect on hover for navigation links */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Set up the main content area with a flexible layout */
+main {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Style the welcome section to take up more space */
+#welcome {
+    flex: 2;
+    margin-right: 20px;
+}
+
+/* Format the welcome section's heading */
+#welcome h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Style the welcome section's text for readability */
+#welcome p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Ensure the welcome section's image fits nicely */
+#welcome img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Create a contrasting sidebar for the line-up section */
+#line-up {
+    flex: 1;
+    background-color: #172d67;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+/* Style the line-up section's heading */
+#line-up h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Format the line-up list with bullets */
+#line-up ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Space out the line-up list items */
+#line-up ul li {
+    margin: 10px 0;
+}
+
+/* Arrange images evenly in a container */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style images to fit consistently */
+.image-container img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Design a vibrant footer */
+footer {
+    background-color: #8c15e9;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
