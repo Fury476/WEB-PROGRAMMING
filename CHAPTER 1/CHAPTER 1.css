@@ -1,0 +1,105 @@
+/* Basic page setup */
+body {
+    margin: 0; /* Get rid of default margin */
+    padding: 20px; /* Add a little space inside the page */
+    font-family: 'Georgia', serif; /* Set a nice readable font */
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark gray text */
+    line-height: 1.6; /* Space out lines so it's easier to read */
+}
+
+/* Main content box */
+.container {
+    max-width: 800px; /* Keep it from stretching too wide */
+    margin: 0 auto; /* Center it on the page */
+    background-color: white; /* White background for the content */
+    padding: 30px; /* Add space inside the container */
+    border-radius: 10px; /* Slightly round the corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow around the box */
+}
+
+/* Big main heading */
+h1 {
+    color: #8B4513; /* Brownish color for the heading */
+    text-align: center; /* Center the text */
+    font-size: 2.5em; /* Make it pretty big */
+    margin-bottom: 20px; /* Space below it */
+    border-bottom: 2px solid #D2B48C; /* Line underneath */
+    padding-bottom: 10px; /* Space between text and line */
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.1em; /* Slightly bigger text */
+    color: #555; /* Softer gray color */
+    margin-bottom: 30px; /* Space under paragraphs */
+    font-style: italic; /* Make it a bit fancy */
+}
+
+/* Subheadings */
+h2 {
+    color: #A0522D; /* A slightly lighter brown */
+    font-size: 1.8em; /* Not as big as h1 but still noticeable */
+    margin: 30px 0 15px; /* Top and bottom margins */
+    border-left: 5px solid #DEB887; /* A bold line on the left */
+    padding-left: 10px; /* Space between line and text */
+}
+
+/* Unordered list (bulleted list) */
+ul {
+    list-style-type: square; /* Use square bullets instead of circles */
+    margin: 0 0 30px 20px; /* Space around it */
+    padding-left: 20px; /* Indent the list */
+}
+
+/* Ordered list (numbered list) */
+ol {
+    margin: 0 0 30px 20px; /* Same as ul for consistency */
+    padding-left: 20px;
+}
+
+/* List items inside ul or ol */
+li {
+    margin: 10px 0; /* Little space between list items */
+    font-size: 1em; /* Normal text size */
+    color: #444; /* Darker text for easier reading */
+}
+
+/* Hover effect for list items */
+li:hover {
+    color: #8B4513; /* Change color when you hover over a list item */
+    transition: color 0.3s ease; /* Make the color change smooth */
+}
+
+/* Styling links (buttons or regular links) */
+a {
+    display: inline-block; /* So padding/margin works properly */
+    margin-top: 20px; /* Space above the link */
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #DEB887; /* Light brown background */
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Slightly round corners */
+    transition: background-color 0.3s ease; /* Smooth background change on hover */
+}
+
+/* Hover effect for links */
+a:hover {
+    background-color: #A0522D; /* Darker brown when hovering */
+}
+
+/* Responsive styles for smaller screens (phones/tablets) */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Less padding to fit smaller screens */
+    }
+    .container {
+        padding: 20px; /* Shrink container padding too */
+    }
+    h1 {
+        font-size: 2em; /* Make headings smaller */
+    }
+    h2 {
+        font-size: 1.5em; /* Smaller subheadings */
+    }
+}
