@@ -1,0 +1,23 @@
+/* Center and style the video container */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+/* Style the embedded video frame */
+iframe {
+    max-width: 100%;
+    border: 3px solid #ff00ff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff00ff;
+}
+
+/* Set up the page with a vibrant gradient background */
+body {
+    background: linear-gradient(135deg, #05001b, #1a002f);
+    color: #fff;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
